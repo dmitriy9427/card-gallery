@@ -1,7 +1,5 @@
 .profile__info {
     margin: 22px 0 30px 30px;
-    display: flex;
-    flex-direction: column;
     max-width: 100%;
     display: grid;
     grid-template-rows: auto;
