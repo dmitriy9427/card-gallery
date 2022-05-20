@@ -1,11 +1,6 @@
 .header__logo {
     max-width: 142px;
     min-height: 33px;
-    color: #fff;
-}
-
-.header__logo:hover {
-    color: #000000;
 }
 
 @media screen and (max-width: 1279px) {

@@ -1,0 +1,23 @@
+.popup__add-btn {
+    background-color: #000000;
+    color: #ffffff;
+    cursor: pointer;
+    margin: 48px 0 0;
+    padding: 14px 0 18px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    border: none;
+}
+
+@media screen and (max-width: 1279px) {
+    .popup__add-btn {
+        font-size: 14px;
+        line-height: 17px;
+        margin-top: 45px;
+        padding-bottom: 14px;
+    }
+}
