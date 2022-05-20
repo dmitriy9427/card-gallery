@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesto</title>
+    <link rel="stylesheet" href="./pages/index.css">
+</head>
+
+<body class="body">
+    <div class="page">
+        <header class="header">
+            <img src="./img/logo (1).svg" alt="логотип место" class="header__logo">
+        </header>
+        <main class="content">
+            <section class="profile">
+                <img src="./img/image.jpg" alt="аватар мерседес" class="profile__image">
+                <div class="profile__info">
+                    <h1 class="profile__title">Жак-Ив Кусто</h1>
+                    <p class="profile__subtitle">Исследователь океана</p>
+                    <button type="submit" title="Редактировать профиль" href="#" class="profile__edit"></button>
+                </div>
+                <button type="button" title="Добавить новую фотографию" href="#" class="profile__add"></button>
+            </section>
+            <section class="elements">
+                <ul class="elements__items">
+                    <li class="elements__item">
+                        <img src="./img/sudan.jpg" alt="Судан" class="elements__img">
+                        <div class="elements__info">
+                            <h2 class="elements__title">Судан</h2>
+                            <button type="button" title="Нравится" class="elements__like"></button>
+                        </div>
+                    </li>
+                    <li class="elements__item">
+                        <img src="./img/maldive.jpg" alt="Мальдивы" class="elements__img">
+                        <div class="elements__info">
+                            <h2 class="elements__title">Мальдивы</h2>
+                            <button type="button" title="Нравится" class="elements__like"></button>
+                        </div>
+                    </li>
+                    <li class="elements__item">
+                        <img src="./img/portugali1.jpg" alt="Португалия" class="elements__img">
+                        <div class="elements__info">
+                            <h2 class="elements__title">Португалия</h2>
+                            <button type="button" title="Нравится" class="elements__like"></button>
+                        </div>
+                    </li>
+                    <li class="elements__item">
+                        <img src="./img/kumano.jpg" alt="Кумано" class="elements__img">
+                        <div class="elements__info">
+                            <h2 class="elements__title">Кумано</h2>
+                            <button type="button" title="Нравится" class="elements__like"></button>
+                        </div>
+                    </li>
+                    <li class="elements__item">
+                        <img src="./img/rodos.jpg" alt="Родос" class="elements__img">
+                        <div class="elements__info">
+                            <h2 class="elements__title">Родос</h2>
+                            <button type="button" title="Нравится"
+                                class="elements__like elements__like-active"></button>
+                        </div>
+                    </li>
+                    <li class="elements__item">
+                        <img src="./img/portugal.jpg" alt="Португалия" class="cars__img">
+                        <div class="elements__info">
+                            <h2 class="elements__title">Португалия</h2>
+                            <button type="button" title="Нравится" class="elements__like"></button>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+        </main>
+        <footer class="footer">
+            <p class="footer__copyright">&copy;&nbsp;2022 Mesto Russia Дмитрий Рябов</p>
+        </footer>
+    </div>
+
+    <div class="popup">
+        <div class="popup-form">
+            <button class="close__popup" title="Закрыть форму"></button>
+            <h3 class="popup__title">Редактировать профиль</h3>
+            <form action="#" method="#" class="popup__container">
+                <input type="text" id="heading" name="heading" placeholder="Жак-Ив Кусто"
+                    class="popup__input popup__container_heading">
+                <input type="text" id="subheading" name="subheading" placeholder="Исследователь океана"
+                    class="popup__input popup__container_subheading">
+                <button type="submit" class="popup__container_button" title="Сохранить">Сохранить</button>
+            </form>
+        </div>
+    </div>
+    <script src="./scripts/scripts.js"></script>
+</body>
+
+</html>

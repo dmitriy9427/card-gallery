@@ -1,0 +1,9 @@
+.elements__img {
+    z-index: 1;
+    box-sizing: border-box;
+    background-color: #fff;
+    object-fit: contain;
+    width: 282px;
+    height: 282px;
+    border-radius: 0px;
+}
