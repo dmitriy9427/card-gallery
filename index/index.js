@@ -3,10 +3,10 @@ const popup = document.querySelector('.popup');
 const closeProfileEdit = popup.querySelector('.popup__close');
 
 const profileTitleElement = document.querySelector('.profile__title');
-const nameHeadingElement = popup.querySelector('.popup__container_heading')
+const nameHeadingElement = popup.querySelector('.popup__input_heading')
 
 const profileSubtitleElemtnt = document.querySelector('.profile__subtitle')
-const nameSubheadingElement = document.querySelector('.popup__container_subheading')
+const nameSubheadingElement = document.querySelector('.popup__input_subheading')
 const POPUP_IS_OPEN_CLASSNAME = 'popup__opened';
 
 const formPopupElement = document.querySelector('.popup__container')
