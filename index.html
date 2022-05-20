@@ -12,58 +12,57 @@
 <body class="body">
     <div class="page">
         <header class="header">
-            <img src="./img/logo (1).svg" alt="логотип место" class="header__logo">
+            <img src="./image/logo(1).svg" alt="логотип место" class="header__logo">
         </header>
         <main class="content">
             <section class="profile">
-                <img src="./img/image.jpg" alt="аватар мерседес" class="profile__image">
+                <img src="./image/image.jpg" alt="аватар мерседес" class="profile__image">
                 <div class="profile__info">
                     <h1 class="profile__title">Жак-Ив Кусто</h1>
                     <p class="profile__subtitle">Исследователь океана</p>
-                    <button type="submit" title="Редактировать профиль" href="#" class="profile__edit"></button>
+                    <button type="submit" title="Редактировать профиль" class="profile__edit"></button>
                 </div>
-                <button type="button" title="Добавить новую фотографию" href="#" class="profile__add"></button>
+                <button type="button" title="Добавить новую фотографию" class="profile__add"></button>
             </section>
             <section class="elements">
                 <ul class="elements__items">
                     <li class="elements__item">
-                        <img src="./img/sudan.jpg" alt="Судан" class="elements__img">
+                        <img src="./image/sudan.jpg" alt="Судан" class="elements__img">
                         <div class="elements__info">
                             <h2 class="elements__title">Судан</h2>
                             <button type="button" title="Нравится" class="elements__like"></button>
                         </div>
                     </li>
                     <li class="elements__item">
-                        <img src="./img/maldive.jpg" alt="Мальдивы" class="elements__img">
+                        <img src="./image/maldive.jpg" alt="Мальдивы" class="elements__img">
                         <div class="elements__info">
                             <h2 class="elements__title">Мальдивы</h2>
                             <button type="button" title="Нравится" class="elements__like"></button>
                         </div>
                     </li>
                     <li class="elements__item">
-                        <img src="./img/portugali1.jpg" alt="Португалия" class="elements__img">
+                        <img src="./image/portugali1.jpg" alt="Португалия" class="elements__img">
                         <div class="elements__info">
                             <h2 class="elements__title">Португалия</h2>
                             <button type="button" title="Нравится" class="elements__like"></button>
                         </div>
                     </li>
                     <li class="elements__item">
-                        <img src="./img/kumano.jpg" alt="Кумано" class="elements__img">
+                        <img src="./image/kumano.jpg" alt="Кумано" class="elements__img">
                         <div class="elements__info">
                             <h2 class="elements__title">Кумано</h2>
                             <button type="button" title="Нравится" class="elements__like"></button>
                         </div>
                     </li>
                     <li class="elements__item">
-                        <img src="./img/rodos.jpg" alt="Родос" class="elements__img">
+                        <img src="./image/rodos.jpg" alt="Родос" class="elements__img">
                         <div class="elements__info">
                             <h2 class="elements__title">Родос</h2>
-                            <button type="button" title="Нравится"
-                                class="elements__like elements__like-active"></button>
+                            <button type="button" title="Нравится" class="elements__like"></button>
                         </div>
                     </li>
                     <li class="elements__item">
-                        <img src="./img/portugal.jpg" alt="Португалия" class="cars__img">
+                        <img src="./image/portugal.jpg" alt="Португалия" class="elements__img">
                         <div class="elements__info">
                             <h2 class="elements__title">Португалия</h2>
                             <button type="button" title="Нравится" class="elements__like"></button>
@@ -80,18 +79,18 @@
 
     <div class="popup">
         <div class="popup-form">
-            <button class="close__popup" title="Закрыть форму"></button>
+            <button class="popup__close" title="Закрыть форму"></button>
             <h3 class="popup__title">Редактировать профиль</h3>
-            <form action="#" method="#" class="popup__container">
+            <form class="popup__container">
                 <input type="text" id="heading" name="heading" placeholder="Жак-Ив Кусто"
                     class="popup__input popup__container_heading">
                 <input type="text" id="subheading" name="subheading" placeholder="Исследователь океана"
                     class="popup__input popup__container_subheading">
-                <button type="submit" class="popup__container_button" title="Сохранить">Сохранить</button>
+                <button type="submit" class="popup__addBtn" title="Сохранить">Сохранить</button>
             </form>
         </div>
     </div>
-    <script src="./scripts/scripts.js"></script>
+    <script src="./index/index.js"></script>
 </body>
 
 </html>

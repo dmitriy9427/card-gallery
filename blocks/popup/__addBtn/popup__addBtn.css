@@ -1,4 +1,4 @@
-.popup__container_button {
+.popup__addBtn {
     background-color: #000000;
     color: #ffffff;
     cursor: pointer;
@@ -13,7 +13,7 @@
 }
 
 @media screen and (max-width: 1279px) {
-    .popup__container_button {
+    .popup__addBtn {
         font-size: 14px;
         line-height: 17px;
         margin-top: 45px;
