@@ -8,6 +8,12 @@
     line-height: 29px;
 }
 
+@media screen and (max-width: 1023px) {
+    .popup__title {
+        max-width: 306px;
+    }
+}
+
 @media screen and (max-width: 767px) {
     .popup__title {
         max-width: 238px;
