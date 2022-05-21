@@ -1,56 +1,38 @@
-const profileEdit = document.querySelector('.profile__edit-btn');
+const profileEditBtn = document.querySelector('.profile__edit-btn');
 const popup = document.querySelector('.popup');
-const closeProfileEdit = popup.querySelector('.popup__close');
+const popupCloseBtn = popup.querySelector('.popup__close');
 
 const profileTitleElement = document.querySelector('.profile__title');
-const nameHeadingElement = popup.querySelector('.popup__input_heading_text')  
+const nameInput = popup.querySelector('.popup__input_text_heading')
 
-const profileSubtitleElemtnt = document.querySelector('.profile__subtitle')
-const nameSubheadingElement = document.querySelector('.popup__input_subheading_text') 
-const POPUP_IS_OPEN_CLASSNAME = 'popup__opened';
+const profileSubtitleElement = document.querySelector('.profile__subtitle')
+const nameSubheadingElement = document.querySelector('.popup__input_text_subheading')
+const POPUP_IS_OPEN_CLASSNAME = 'popup_opened';
 
 const formPopupElement = document.querySelector('.popup__form')
-// console.log(profileTitleElement)
-// console.log(nameHeadingElement)
-// console.log(profileEdit);
-// console.log(popup);
-// console.log(closeProfileEdit);
 
-function openPopup(profileEdit) {
-    profileEdit.classList.add(POPUP_IS_OPEN_CLASSNAME)
+
+function openPopup(profileEditBtn) {//если я удаляю аргумент, код перестает работать((
+    profileEditBtn.classList.add(POPUP_IS_OPEN_CLASSNAME)
 }
 
-function closePopup(closeProfileEdit) {
-    closeProfileEdit.classList.remove(POPUP_IS_OPEN_CLASSNAME)
+function closePopup(popupCloseBtn) {
+    popupCloseBtn.classList.remove(POPUP_IS_OPEN_CLASSNAME)
 }
 
-profileEdit.addEventListener('click', function () {
-    if (popup) {
-        openPopup(popup);
-    }
-    nameHeadingElement.value = profileTitleElement.textContent;
-    nameSubheadingElement.value = profileSubtitleElemtnt.textContent;
+profileEditBtn.addEventListener('click', function () {
+    openPopup(popup);
+    nameInput.value = profileTitleElement.textContent;
+    nameSubheadingElement.value = profileSubtitleElement.textContent;
 })
 
-closeProfileEdit.addEventListener('click', function () {
+popupCloseBtn.addEventListener('click', function () {
     closePopup(popup)
 })
 
 formPopupElement.addEventListener('submit', function (event) {
     event.preventDefault()
-    profileTitleElement.textContent = nameHeadingElement.value;
-    profileSubtitleElemtnt.textContent = nameSubheadingElement.value;
+    profileTitleElement.textContent = nameInput.value;
+    profileSubtitleElement.textContent = nameSubheadingElement.value;
     closePopup(popup)
-})
-
-function detectClosePopup(event) {
-    console.log(event.target);
-    console.log(event.target.classList);
-    if (event.target.classList.contains('popup')) {
-        closePopup(popup)
-    }
-}
-
-document.body.addEventListener('click', function (event) {
-    detectClosePopup(event)
 })

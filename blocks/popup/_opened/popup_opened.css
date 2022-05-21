@@ -6,11 +6,11 @@
 
     100% {
         opacity: 1;
-        transform: scale(100%);
+        transform: scale(1);
     }
 }
 
-.popup__opened {
+.popup_opened {
     display: flex;
     animation-duration: 1s;
     animation-fill-mode: both;

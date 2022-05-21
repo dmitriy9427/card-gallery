@@ -20,6 +20,6 @@
         margin: 26px auto 36px;
         gap: 14px 10px;
         flex-direction: column;
-        grid-template-columns: max-content, 25px;
+        grid-template-columns: max-content 25px;
     }
 }
