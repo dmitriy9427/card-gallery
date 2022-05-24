@@ -19,5 +19,6 @@
     .popup__form {
         max-width: 238px;
         margin-bottom: 25px;
+        margin-top: 75px;
     }
 }

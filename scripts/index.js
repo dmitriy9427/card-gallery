@@ -12,9 +12,9 @@ const formPopupElement = document.querySelector('.popup__form')
 
 
 function openPopup() {
-    popup.classList.add('popup_opened')
     nameInput.value = profileTitleElement.textContent;
     nameTextInput.value = profileSubtitleElement.textContent;
+    popup.classList.add('popup_opened')
 }
 
 function closePopup() {
