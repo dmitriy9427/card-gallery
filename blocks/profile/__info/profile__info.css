@@ -1,5 +1,5 @@
 .profile__info {
-    margin: 22px 0 25px 30px;
+    margin: 22px 25px 30px;
     max-width: 336px;
     display: grid;
     grid-template-rows: auto;
@@ -10,14 +10,15 @@
     .profile__info {
         max-width: 306px;
         gap: 14px 12px;
-        margin-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
     }
 }
 
 @media screen and (max-width: 767px) {
     .profile__info {
         max-width: 282px;
-        margin: 26px auto 36px;
+        margin: 22.25px auto 36px;
         gap: 14px 10px;
         flex-direction: column;
         grid-template-columns: max-content 25px;

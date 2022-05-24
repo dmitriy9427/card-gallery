@@ -5,17 +5,19 @@
     flex-direction: column;
     z-index: 4;
     max-width: 358px;
-    margin: 0 auto;
+    margin: 0 auto 37px;
 }
 
 @media screen and (max-width: 1023px) {
     .popup__form {
         max-width: 306px;
+        margin-bottom: 30px;
     }
 }
 
 @media screen and (max-width: 767px) {
     .popup__form {
         max-width: 238px;
+        margin-bottom: 25px;
     }
 }

@@ -7,6 +7,7 @@
     background-size: contain;
     border: none;
     padding: 0;
+    margin-right: 1px;
     background-color: transparent;
     z-index: 3;
     transition: opacity 1s ease;
