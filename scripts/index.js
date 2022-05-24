@@ -6,33 +6,30 @@ const profileTitleElement = document.querySelector('.profile__title');
 const nameInput = popup.querySelector('.popup__input_text_heading')
 
 const profileSubtitleElement = document.querySelector('.profile__subtitle')
-const nameSubheadingElement = document.querySelector('.popup__input_text_subheading')
-const popupOpen = 'popup_opened';
+const nameTextInput = document.querySelector('.popup__input_text_subheading')
 
 const formPopupElement = document.querySelector('.popup__form')
 
 
 function openPopup() {
-    popup.classList.add(popupOpen)
+    popup.classList.add('popup_opened')
+    nameInput.value = profileTitleElement.textContent;
+    nameTextInput.value = profileSubtitleElement.textContent;
 }
 
 function closePopup() {
-    popup.classList.remove(popupOpen)
+    popup.classList.remove('popup_opened')
 }
 
-profileEditBtn.addEventListener('click', function () {
-    openPopup();
-    nameInput.value = profileTitleElement.textContent;
-    nameSubheadingElement.value = profileSubtitleElement.textContent;
-})
+profileEditBtn.addEventListener('click', openPopup);
 
-popupCloseBtn.addEventListener('click', function () {
-    closePopup()
-})
+
+popupCloseBtn.addEventListener('click', closePopup);
+
 
 formPopupElement.addEventListener('submit', function (event) {
     event.preventDefault()
     profileTitleElement.textContent = nameInput.value;
-    profileSubtitleElement.textContent = nameSubheadingElement.value;
+    profileSubtitleElement.textContent = nameTextInput.value;
     closePopup()
 })
