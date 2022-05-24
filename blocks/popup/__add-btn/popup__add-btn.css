@@ -14,7 +14,13 @@
     border-radius: 2px;
 }
 
-@media screen and (max-width: 1279px) {
+.popup__add-btn:hover {
+    opacity: 0.8;
+    transition: opacity 1s ease;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
     .popup__add-btn {
         font-size: 14px;
         line-height: 17px;
