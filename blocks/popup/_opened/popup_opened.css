@@ -1,9 +1,21 @@
+@keyframes InDown {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
 .popup_opened {
-    visibility: visible;
     display: flex;
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
-    opacity: 1;
-    transition: all 0.5s, ease 0.3s;
+    animation-duration: 0.7s;
+    animation-fill-mode: both;
+    animation-name: InDown;
 }
