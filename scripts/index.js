@@ -25,7 +25,7 @@ const popupImgCaption = document.querySelector('.popup__image-caption');
 
 
 //функция удаления карточки
-function deleteCard(event) {
+function handleDeleteCard(event) {
     event.target.closest('.elements__item').remove();
 }
 
@@ -44,9 +44,9 @@ function createCard(cardData) {
 
     cardsTitle.textContent = cardData.name;
     cardsImg.src = cardData.link;
-    cardsImg.alt = 'Изображение';
+    cardsImg.alt = cardData.name;
 
-    cardsDeleteBtn.addEventListener('click', deleteCard);
+    cardsDeleteBtn.addEventListener('click', handleDeleteCard);
     cardsLikeBtn.addEventListener('click', handleLikeClick);
     cardsImg.addEventListener('click', function () {
         popupImage.src = cardData.link;
@@ -69,7 +69,7 @@ function openPopup(popup) {
     popup.classList.add('popup_opened')
 }
 
-function closeModalWindow(popup) {
+function closePopup(popup) {
     popup.classList.remove('popup_opened')
 }
 
@@ -79,14 +79,14 @@ profileEditBtn.addEventListener('click', () => {
 });
 
 popupCloseProfileEditBtn.addEventListener('click', function () {
-    closeModalWindow(popupProfileEdit);
+    closePopup(popupProfileEdit);
 });
 
 formPopupProfile.addEventListener('submit', function (event) {
     event.preventDefault()
     profileTitleElement.textContent = nameProfileInput.value;
     profileSubtitleElement.textContent = nameJobInput.value;
-    closeModalWindow(popupProfileEdit)
+    closePopup(popupProfileEdit)
 })
 
 //попап добавление карточек
@@ -95,7 +95,7 @@ profileAddBtn.addEventListener('click', () => {
 });
 
 popupCloseAddCardsBtn.addEventListener('click', () => {
-    closeModalWindow(popupAddCards)
+    closePopup(popupAddCards)
 });
 
 popupAddCards.addEventListener('submit', (event) => {
@@ -110,11 +110,11 @@ popupAddCards.addEventListener('submit', (event) => {
     openPopup(popupAddCards);
     nameCardInput.value = "";
     nameCardLinkInput.value = "";
-    closeModalWindow(popupAddCards)
+    closePopup(popupAddCards)
 });
 
 closePopupImgBtn.addEventListener('click', function () {
-    closeModalWindow(popupOpenImage)
+    closePopup(popupOpenImage)
 });
 
 

@@ -8,7 +8,9 @@
     width: 100%;
     height: 100%;
     visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
     transition: all 0.3s;
 }
-
-/* только я все равно не пойму почему при закрытии уезжает в сторону мой попап  */
