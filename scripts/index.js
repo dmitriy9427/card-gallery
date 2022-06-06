@@ -110,6 +110,7 @@ popupAddCards.addEventListener('submit', (event) => {
     openPopup(popupAddCards);
     nameCardInput.value = "";
     nameCardLinkInput.value = "";
+    closeModalWindow(popupAddCards)
 });
 
 closePopupImgBtn.addEventListener('click', function () {
