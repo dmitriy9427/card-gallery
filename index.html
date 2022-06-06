@@ -26,106 +26,67 @@
                 <button type="button" aria-label="Добавить новую фотографию" title="Добавить новую фотографию"
                     class="profile__add-btn"></button>
             </section>
-            <section class="elements">
-                <ul class="elements__items">
-                    <li class="elements__item">
-                        <button class="elements__delete-btn" type="button" aria-label="Удалить картинку"
-                            title="Удалить картинку"></button>
-                        <img src="./image/sudan.jpg" alt="Судан" class="elements__img">
-                        <div class="elements__info">
-                            <h2 class="elements__title">Судан</h2>
-                            <button type="button" aria-label="Нравится" title="Нравится"
-                                class="elements__like-btn elements__like-btn_active"></button>
-                        </div>
-                    </li>
-                    <li class="elements__item">
-                        <button class="elements__delete-btn" type="button" aria-label="Удалить картинку"
-                            title="Удалить картинку"></button>
-                        <img src="./image/maldive.jpg" alt="Мальдивы" class="elements__img">
-                        <div class="elements__info">
-                            <h2 class="elements__title">Мальдивы</h2>
-                            <button type="button" aria-label="Нравится" title="Нравится"
-                                class="elements__like-btn elements__like-btn_active"></button>
-                        </div>
-                    </li>
-                    <li class="elements__item">
-                        <button class="elements__delete-btn" type="button" aria-label="Удалить картинку"
-                            title="Удалить картинку"></button>
-                        <img src="./image/Réunion.jpg" alt="Реюньон" class="elements__img">
-                        <div class="elements__info">
-                            <h2 class="elements__title">Реюньон</h2>
-                            <button type="button" aria-label="Нравится" title="Нравится"
-                                class="elements__like-btn elements__like-btn_active"></button>
-                        </div>
-                    </li>
-                    <li class="elements__item">
-                        <button class="elements__delete-btn" type="button" aria-label="Удалить картинку"
-                            title="Удалить картинку"></button>
-                        <img src="./image/kumano.jpg" alt="Кумано" class="elements__img">
-                        <div class="elements__info">
-                            <h2 class="elements__title">Кумано</h2>
-                            <button type="button" aria-label="Нравится" title="Нравится"
-                                class="elements__like-btn elements__like-btn_active"></button>
-                        </div>
-                    </li>
-                    <li class="elements__item">
-                        <button class="elements__delete-btn" type="button" aria-label="Удалить картинку"
-                            title="Удалить картинку"></button>
-                        <img src="./image/florencia.jpg" alt="Флоренция" class="elements__img">
-                        <div class="elements__info">
-                            <h2 class="elements__title">Флоренция</h2>
-                            <button type="button" aria-label="Нравится" title="Нравится"
-                                class="elements__like-btn elements__like-btn_active"></button>
-                        </div>
-                    </li>
-                    <li class="elements__item">
-                        <button class="elements__delete-btn" type="button" aria-label="Удалить картинку"
-                            title="Удалить картинку"></button>
-                        <img src="./image/islands.jpg" alt="Исландия" class="elements__img">
-                        <div class="elements__info">
-                            <h2 class="elements__title">Исландия</h2>
-                            <button type="button" aria-label="Нравится" title="Нравится"
-                                class="elements__like-btn elements__like-btn_active"></button>
-                        </div>
-                    </li>
-                </ul>
-            </section>
-
+            <div class="elements">
+                <ul class="elements__items"></ul>
+            </div>
         </main>
         <footer class="footer">
             <p class="footer__copyright">&copy;&nbsp;2022 Mesto Russia Дмитрий Рябов</p>
         </footer>
-    </div>
 
-    <div class="popup">
+    
+    <div class="popup popup_type_profile-edit">
         <div class="popup__container">
-            <button type="button" class="popup__close" aria-label="Закрыть форму" title="Закрыть форму"></button>
+            <button type="button" class="popup__close popup__close_type_profile-edit" aria-label="Закрыть форму"
+                title="Закрыть форму"></button>
             <h3 class="popup__title">Редактировать профиль</h3>
             <form class="popup__form" name="form">
-                <input type="text" id="heading" name="heading" placeholder="Жак-Ив Кусто"
-                    class="popup__input popup__input_text_heading" required>
+                <input type="text" id="name" name="name" placeholder="Жак-Ив Кусто"
+                    class="popup__input popup__input_type_name" required>
                 <input type="text" id="subheading" name="subheading" placeholder="Исследователь океана"
-                    class="popup__input popup__input_text_subheading" required>
-                <button type="submit" class="popup__add-btn" aria-label="Сохранить" title="Сохранить">Сохранить</button>
+                    class="popup__input popup__input_type_subheading" required>
+                <button type="submit" class="popup__save-btn button" aria-label="Сохранить"
+                    title="Сохранить">Сохранить</button>
             </form>
         </div>
     </div>
 
-    <div class="popuup">
-        <div class="popuup__container">
-            <button type="button" class="popuup__close" aria-label="Закрыть форму" title="Закрыть форму"></button>
-            <h3 class="popuup__title">Новое место</h3>
-            <form class="popuup__form" name="form">
-                <input type="text" id="heading" name="heading" placeholder="Название"
-                    class="popuup__input popuup__input_text_heading" required>
-                <input type="text" id="subheading" name="link" placeholder="Ссылка на картинку"
-                    class="popuup__input popup__input_text_link" required>
-                <button type="submit" class="popuup__add-btn" aria-label="Создать" title="Создать">Создать</button>
+    <div class="popup popup_type_add-cards">
+        <div class="popup__container">
+            <button type="button" class="popup__close popup__close_type_add-cards" aria-label="Закрыть форму"
+                title="Закрыть форму"></button>
+            <h3 class="popup__title">Новое место</h3>
+            <form class="popup__form" name="form">
+                <input type="text" id="card-name" name="card-name" placeholder="Название"
+                    class="popup__input popup__input_type_card-name" required>
+                <input type="search" id="card-link" name="card-link" placeholder="Ссылка на картинку"
+                    class="popup__input popup__input_type_card-link" required>
+                <button type="submit" class="popup__create-card button" aria-label="Создать"
+                    title="Создать">Создать</button>
             </form>
         </div>
     </div>
+    <div class="popup popup_type_image">
+        <div class="popup__image-container">
+            <img src="#" alt="Изображение" class="popup__open-image">
+            <p class="popup__image-caption"></p>
+            <button type="button" class="popup__close popup__close_type_image"></button>
+        </div>
+    </div>
 
-
+    <template class="template">
+        <li class="elements__item">
+            <img alt="Изображение" class="elements__img">
+            <div class="elements__info">
+                <h2 class="elements__title"></h2>
+                <button type="button" aria-label="Нравится" title="Нравится" class="elements__like-btn"></button>
+                <button class="elements__delete-btn" type="button" aria-label="Удалить картинку"
+                    title="Удалить картинку"></button>
+            </div>
+        </li>
+    </template>
+</div>
+    <script src="./scripts/scripts.js"></script>
     <script src="./scripts/index.js"></script>
 </body>
 
