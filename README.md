@@ -2,8 +2,7 @@
 
 ## HTML:
 
-- Верстка popup, знакомство с <template>.
-
+- Верстка popup, знакомство с template.
 ## CSS:
 
 - Стилизация popup.
