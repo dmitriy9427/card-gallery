@@ -2,26 +2,25 @@ function submitForm(e) {
     e.preventDefault();
 }
 
-function disableRemBtn(button, inactiveButtonClass) {
+function enableSubmitButton(button, inactiveButtonClass) {
     button.removeAttribute('disabled')
     button.classList.remove(inactiveButtonClass);
 }
 
-function disableAddBtn(button, inactiveButtonClass) {
+function disableSubmitButton(button, inactiveButtonClass) {
     button.setAttribute('disabled', '');
     button.classList.add(inactiveButtonClass);
 }
-
 
 function toggleButton(form, { submitButtonSelector, inactiveButtonClass }) {
     const button = form.querySelector(submitButtonSelector);
     const isFormValid = form.checkValidity();
 
     if (isFormValid) {
-        disableRemBtn(button, inactiveButtonClass)
+        enableSubmitButton(button, inactiveButtonClass)
 
     } else {
-        disableAddBtn(button, inactiveButtonClass)
+        disableSubmitButton(button, inactiveButtonClass)
     }
 }
 
