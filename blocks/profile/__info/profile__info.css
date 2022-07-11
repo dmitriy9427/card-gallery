@@ -21,6 +21,5 @@
         gap: 10px 10px;
         flex-direction: column;
         grid-template-columns: max-content 25px;
-        margin-right: 19px;
     }
 }

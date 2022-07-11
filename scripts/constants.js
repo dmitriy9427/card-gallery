@@ -3,7 +3,7 @@ export const validationConfig = {
     formSelector: '.popup__form',
     inputSelector: '.popup__input',
     errorClass: '.error-message',
-    errorvisibleClass: 'error-message_visible',
+    errorVisibleClass: 'error-message_visible',
     inactiveButtonClass: 'popup__button_disabled',
     inputErrorClass: 'popup__input_type_error',
 }

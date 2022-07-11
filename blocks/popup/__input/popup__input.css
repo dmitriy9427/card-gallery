@@ -12,10 +12,6 @@
     line-height: 17px;
 }
 
-/* .popup__input:last-of-type {
-    margin-bottom: 48px;
-} */
-
 @media screen and (max-width: 1023px) {
     .popup__input {
         max-width: 306px;
@@ -27,7 +23,7 @@
         max-width: 238px;
     }
 
-    .popup__input:last-of-type {
+    .popup__input:last-child {
         margin-bottom: 40px;
     }
 }
