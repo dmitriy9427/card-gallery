@@ -23,8 +23,8 @@ const cardContainer = document.querySelector('.elements__items');
 const cardTemplateSelector = '.template';
 const nameCardInput = document.querySelector('.popup__input_type_card-name');
 const nameCardLinkInput = document.querySelector('.popup__input_type_card-link');
-export const popupImage = document.querySelector('.popup__open-image');
-export const popupImgCaption = document.querySelector('.popup__image-caption');
+ const popupImage = document.querySelector('.popup__open-image');
+ const popupImgCaption = document.querySelector('.popup__image-caption');
 const popupCreateCard = document.querySelector('.popup__create-card')
 const formAddCard = document.querySelector('.popup__form_add-cards')
 

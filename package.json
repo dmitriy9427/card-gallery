@@ -1,0 +1,23 @@
+{
+  "name": "mesto",
+  "version": "1.0.0",
+  "description": "- Начало работы с Java Script, получены первые навыки открытия и закрытия модальных окон.\r - Редактирование профиля\r - Добавление картинок на страницу и их удаление.\r - Так же на картинку можно ставить лайки и убирать их.\r - Открытие на весть экран по клику на картинку.\r - Закрытие модального окна нажатием на клавишу Esc, нажатием на любую область вне модального окна.\r - Валидация форм.",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmitriy9427/mesto.git"
+  },
+  "author": "Dmitry Ryabov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dmitriy9427/mesto/issues"
+  },
+  "homepage": "https://github.com/dmitriy9427/mesto#readme",
+  "devDependencies": {
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0"
+  }
+}
