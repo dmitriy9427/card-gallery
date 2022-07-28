@@ -55,7 +55,7 @@ const cardAdd = new PopupWithForm(
         handleFormSubmit: (cardData) =>
         {
             const newCardElement = createCard(cardData);
-            cardContainer.prepend(newCardElement);
+            cardListRender.addItem(newCardElement);
         },
     },
     '.popup_type_add-cards'
@@ -67,7 +67,7 @@ const cardListRender = new Section({
     renderer: (cardData) =>
     {
         const newCardElement = createCard(cardData);
-        cardContainer.prepend(newCardElement);
+        cardListRender.addItem(newCardElement);
     },
 },
     '.elements__items'
