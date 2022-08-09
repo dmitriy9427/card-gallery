@@ -3,21 +3,21 @@
     color: #000;
     display: flex;
     flex-direction: column;
-    max-width: 358px;
-    margin: 45px auto 40px;
+    justify-content: space-between;
+    padding-left: 36px;
+    padding-right: 36px;
 }
 
 @media screen and (max-width: 1023px) {
     .popup__form {
-        max-width: 306px;
-        margin-bottom: 30px;
+        padding-left: 28px;
+        padding-right: 28px;
     }
 }
 
 @media screen and (max-width: 767px) {
     .popup__form {
-        max-width: 238px;
-        margin-bottom: 25px;
-        margin-top: 75px;
+        padding-left: 22px;
+        padding-right: 22px;
     }
 }

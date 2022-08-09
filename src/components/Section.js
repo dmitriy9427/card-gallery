@@ -1,22 +1,23 @@
 export class Section
 {
-    constructor ({ items, renderer }, containerSelector)
+    constructor ({ items, renderer }, container)
     {
         this._initialCards = items;
         this._renderer = renderer;
-        this._containerSelector = document.querySelector(containerSelector);
+        this._container = document.querySelector(container);
     }
 
+    //принимает параметр и вставляет его в разметку
     addItem(element)
     {
-        this._containerSelector.prepend(element);
+        this._container.prepend(element);
     }
 
-    renderItems()
+
+    //перебор массива
+    renderItems(items)
     {
-        this._initialCards.forEach(item =>
-        {
-            this._renderer(item)
-        });
+        items.forEach(item => this._renderer(item));
     }
+
 }

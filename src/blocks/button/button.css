@@ -12,6 +12,7 @@
     text-align: center;
     border: none;
     border-radius: 2px;
+    width: 100%;
 }
 
 .button:hover {

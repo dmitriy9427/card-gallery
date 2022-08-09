@@ -62,6 +62,7 @@ export class FormValidator
         const { inactiveButtonClass } = this._settings;
         this._buttonElement.classList.add(inactiveButtonClass);
         this._buttonElement.disabled = true;
+        
     }
 
     _enableSubmitButton = () =>
@@ -99,7 +100,6 @@ export class FormValidator
             evt.preventDefault()
         });
         this._setEventListeners()
-        this._toggleButtonState();
     }
 }
 
