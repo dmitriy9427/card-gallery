@@ -41,7 +41,7 @@
                 <button type="button" class="popup__close popup__close_type_profile-edit" aria-label="Закрыть форму"
                     title="Закрыть форму"></button>
                 <h3 class="popup__title">Редактировать профиль</h3>
-                <form class="popup__form popup__form-profile" name="form" novalidate>
+                <form class="popup__form popup__form-profile" name="form-profile-edit" novalidate>
                     <div class="input-container">
                         <input id="username" type="text" name="name" placeholder="Имя"
                             class="popup__input popup__input_type_name" minlength="2" maxlength="40" required>
@@ -63,7 +63,7 @@
                 <button type="button" class="popup__close popup__close_type_add-cards" aria-label="Закрыть форму"
                     title="Закрыть форму"></button>
                 <h3 class="popup__title">Новое место</h3>
-                <form class="popup__form popup__form_add-cards" name="form" novalidate>
+                <form class="popup__form popup__form_add-cards" name="form-add-cards" novalidate>
                     <div class="input-container">
                         <input id="cardname" type="text" name="cardName" placeholder="Название"
                             class="popup__input popup__input_type_card-name" minlength="2" maxlength="30" required>
@@ -101,7 +101,7 @@
         <div class="popup popup_type_update-avatar">
             <div class="popup__avatar-container popup__container">
                 <h3 class="popup__title">Обновить аватар</h3>
-                <form name="form" class="popup__form popup__form_type_update-avatar" novalidate>
+                <form name="form-update-avatar" class="popup__form popup__form_type_update-avatar" novalidate>
                     <div class="input-container">
                         <input id="avatar-link-input" name="avatar" type="url"
                             class="popup__input popup__input_type_update-avatar" placeholder="Ссылка на картинку"

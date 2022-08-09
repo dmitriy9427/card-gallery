@@ -26,7 +26,7 @@ Promise.all([api.getProfile(), api.getInitialCards()])
     {
         user.setUserInfo(res.name, res.about, res.avatar);
         userId = res._id;
-        section.forEach((data) =>
+        section.reverse().forEach((data) =>
         {
             createCard(data, undefined, cardsList);
         });
