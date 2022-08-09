@@ -1,6 +1,6 @@
 export class UserInfo
 {
-    constructor ({nameInputSelector, jobInputSelector, avatarSelector})
+    constructor ({ nameInputSelector, jobInputSelector, avatarSelector })
     {
         this._name = document.querySelector(nameInputSelector);
         this._job = document.querySelector(jobInputSelector);
@@ -16,7 +16,7 @@ export class UserInfo
     }
 
     // принимает новые данные пользователя и добавляет их на страницу
-    setUserInfo( name, about, avatar )
+    setUserInfo(name, about, avatar)
     {
         this._name.textContent = name;
         this._job.textContent = about;

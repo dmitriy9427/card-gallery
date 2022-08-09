@@ -175,10 +175,8 @@ function createCard(data, undefined, cardsList)
     cardsList.addItem(cardsElement);
 }
 
-
 const popupOpenImage = new PopupWithImage('.popup_type_image');
 const popupConfirmationDelete = new PopupConfirmation('.popup_type_confirmation');
-
 
 cardAdd.setEventListeners();
 changeProfile.setEventListeners();

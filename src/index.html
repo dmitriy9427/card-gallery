@@ -74,7 +74,7 @@
                             class="popup__input popup__input_type_card-link" required>
                         <span id="error-cardlink" class="error-message"></span>
                     </div>
-                    <button type="submit" class="popup__create-carpopup__save-btn button" aria-label="Создать"
+                    <button type="submit" class="popup__create-card popup__save-btn button" aria-label="Создать"
                         title="Создать">Сохранить</button>
                 </form>
             </div>
@@ -91,7 +91,7 @@
             <div class="popup__confirmation-container">
                 <h3 class="popup__title-confirmation">Вы&nbsp;уверены?</h3>
                 <form class="popup__form" name="confirmation-form" novalidate>
-                    <button class="button " type="submit"
+                    <button class="button popup__create-card popup__save-btn" type="submit"
                         aria-label="Вы&nbsp;уверены?" title="Вы&nbsp;уверены?">Да</button>
                 </form>
                 <button type="button" class="popup__close popup__close_type_confirmation"></button>
@@ -103,8 +103,9 @@
                 <h3 class="popup__title">Обновить аватар</h3>
                 <form name="form" class="popup__form popup__form_type_update-avatar" novalidate>
                     <div class="input-container">
-                        <input id="avatar-link-input" name="avatar" type="url" class="popup__input popup__input_type_update-avatar"
-                            placeholder="Ссылка на картинку" required>
+                        <input id="avatar-link-input" name="avatar" type="url"
+                            class="popup__input popup__input_type_update-avatar" placeholder="Ссылка на картинку"
+                            required>
                     </div>
                     <span id="error-avatar-link-input" class="error-message"></span>
                     <button type="submit" aria-label="Сохранить" title="Сохранить"
