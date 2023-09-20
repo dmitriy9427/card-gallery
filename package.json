@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dmitriy9427/mesto.git"
+    "url": "https://github.com/dmitriy9427/card-gallery"
   },
   "author": "Dmytry Ryabov",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dmitriy9427/mesto/issues"
+    "url": "https://github.com/dmitriy9427/card-gallery/issues"
   },
-  "homepage": "https://github.com/dmitriy9427/mesto#readme",
+  "homepage": "https://github.com/dmitriy9427/card-gallery",
   "devDependencies": {
     "@babel/core": "^7.18.9",
     "@babel/preset-env": "^7.18.9",
