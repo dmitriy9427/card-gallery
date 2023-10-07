@@ -2,7 +2,9 @@
 
 ## Ссылки:
 
-### [Ссылка на проект](https://dmitriy9427.github.io/card-gallery/)
+[Демо версия](https://dmitriy9427.github.io/card-gallery/)
+
+<a href="https://www.figma.com/file/2cn9N9jSkmxD84oJik7xL7/JavaScript.-Sprint-4?type=design&node-id=0-1&mode=design&t=MAEMM9JLmgSFX7JY-0" target="_blank">Макет.</a>
 
 ## Описание
 
