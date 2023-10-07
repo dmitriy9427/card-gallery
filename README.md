@@ -1,6 +1,6 @@
 # Проект: Галерея карточек.
 
-![screeen](image.png)
+<img height="250px"  src="./image.png" alt="image project">
 
 ## Ссылки:
 
